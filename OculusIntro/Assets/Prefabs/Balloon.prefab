@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176708262372807169}
   - component: {fileID: 6152094952721558995}
+  - component: {fileID: 4477305369390647851}
   m_Layer: 0
   m_Name: Balloon
   m_TagString: Untagged
@@ -48,6 +49,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4477305369390647851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866764911124141015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186cdbc695962cf4d9eb0433aa1ae47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8579767845426053073
 PrefabInstance:
   m_ObjectHideFlags: 0

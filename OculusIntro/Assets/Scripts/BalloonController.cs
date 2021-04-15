@@ -23,14 +23,15 @@ public class BalloonController : MonoBehaviour
         }
     }
 
-    public void CreateBalloon()
+    public void CreateBalloon(GameObject parentHand)
     {
-        balloon = Instantiate(balloonPrefab);
+        balloon = Instantiate(balloonPrefab, parentHand.transform);
         balloon.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     public void ReleaseBalloon()
     {
+        balloon.transform.parent = null;
         Rigidbody rb = balloon.GetComponent<Rigidbody>();
         Vector3 force = Vector3.up * floatStrength;
         rb.AddForce(force);
